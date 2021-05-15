@@ -1,0 +1,155 @@
+.main-header {
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(46, 20, 10, 0.397),), url(/assets/Front.png);
+    background-size: cover;
+    background-position: 100% 0%;
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+
+.main-header::before {
+    display: block;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-image: url(/assets/Front-transparent.png);
+    background-size: cover;
+    background-position: 100% 0%;
+    background-attachment: fixed;
+    box-shadow: inset 5px -250px 200px 0 #141618;
+}
+
+header {
+    background-color: #141618;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    padding: 20px 0;
+    &__text {
+        color: #161010;
+        padding: 30px 10px;
+        p {
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+    }
+    &__text-light {
+        color: rgb(233, 230, 220);
+    }
+    &__title {
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: 'Vibur', cursive;
+    }
+    &__mobile-icon-container {
+        background: rgba(255, 255, 255, 0);
+        border: none;
+        display:none;
+    }
+    &__mobile-icon {
+        position: relative;
+        z-index: 3;
+        padding: 5px 15px;
+        font-size: 30px;
+    }
+    &__mobile-icon--active {
+        padding: 5px 15px;
+        font-size: 30px;
+        color: #208307;
+    }
+    &__nav {
+        position: relative;
+        z-index: 3;
+    }
+    &__list {
+        display: flex;
+        padding: 30px 0px;
+        list-style-type: none;
+        justify-content: flex-end;
+        text-transform: uppercase;
+    }
+    &__list-item {
+        margin-left: 50px;
+        font-size: 1.3rem;
+        font-style: bold;
+    }
+    &__social-list {
+        top: 15%;
+        z-index: 3;
+        margin-right: 35px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__social-item {
+        margin-bottom: 25px;
+    }
+}
+
+
+.light {
+    color:whitesmoke;
+}
+
+/*-- Animation Keyframes --*/
+
+// animation
+
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(112, 112, 112, 0.92),
+      0 0 30px rgba(0, 0, 0, 0.34),
+      0 0 12px rgba(211, 74, 11, 0.329),
+      0 0 21px rgba(46, 44, 42, 0.92),
+      0 0 34px rgba(173, 171, 171, 0.78),
+      0 0 54px rgba(15, 15, 15, 0.582);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(139, 139, 139, 0.98),
+      0 0 30px rgba(230, 152, 9, 0.007),
+      0 0 12px rgba(187, 89, 23, 0.329),
+      0 0 22px rgba(110, 85, 16, 0.84),
+      0 0 38px rgb(3, 3, 3),
+      0 0 60px rgba(197, 196, 196, 0.726);
+    }
+  }
+  
+  .sign {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    &__word {
+      text-align: center;
+      line-height: 1;
+      animation: neon .08s ease-in-out infinite alternate;
+    }
+  }
+
+/*-- Sign Styles --*/
+
+  // Link
+  .link {
+      position: absolute;
+      bottom: 10px; left: 10px;
+      color: #828282;
+      text-decoration: none;
+  }

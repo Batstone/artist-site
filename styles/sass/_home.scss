@@ -1,0 +1,45 @@
+body {
+    background-color: #141618;
+}
+
+.home {
+    &__section {
+        position: relative;
+        margin-top: 50px;
+    }
+    h2 {
+        color: rgb(219, 194, 54);
+        font-size: 2.6rem;
+        text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(25, 25, 26), -1px 1px 0 rgb(29, 30, 32), 1px 1px 0rgb(28, 87, 250)0;
+        font-family: 'Antic Slab', serif;
+        text-transform: uppercase;
+    }
+    &__title_1 {
+        position: absolute;
+        left: -18px;
+        top: -32px;
+    }
+    &__title_2 {
+        position: absolute;
+        left: -40px;
+        top: -32px;
+    }
+    &__images {
+        position: relative;
+    }
+    &__images-1 {
+        img {
+            width: 100%;
+        }
+    }
+    &__images-1::after {
+        box-shadow: inset 5px -200px 200px 0 #141618;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+       }
+    }
+

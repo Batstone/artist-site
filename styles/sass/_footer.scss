@@ -1,0 +1,26 @@
+.footer {
+    background-image: url(/assets/back_test.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    box-shadow: inset 5px 20px 30px 0 #141618;
+    &__social-links {
+        display: flex;
+        justify-content: center;
+        i {
+            margin: 25px;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__list-item {
+        margin: 10px 0;
+    }
+    a {
+        font-size: 1.5rem;
+    }
+}
