@@ -1,0 +1,18 @@
+.booking {
+    &__text-container {
+        display: flex;
+        justify-content: center;
+    }
+    &__text {
+        margin: 30px 0 50px 0;
+        line-height: 4rem;
+        text-align: center;
+        span {
+            font-size: 2rem;
+            color: rgb(240, 216, 84);
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+}

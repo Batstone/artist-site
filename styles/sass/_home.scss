@@ -17,12 +17,18 @@ body {
     &__title_1 {
         position: absolute;
         left: -18px;
-        top: -32px;
+        top: -20px;
     }
     &__title_2 {
         position: absolute;
         left: -40px;
-        top: -32px;
+        top: -20px;
+    }
+    &__shows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     &__images {
         position: relative;

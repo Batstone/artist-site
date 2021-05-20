@@ -15,7 +15,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 body {
-    max-width: 2000px;
+    max-width: 3000px;
     margin: 0 auto;
     color: whitesmoke;
 }
@@ -31,6 +31,7 @@ body {
 p {
     font-size: 1.2rem;
     font-family: 'Antic Slab', serif;
+    line-height: 1.8rem;
 }
 
 a {
@@ -38,11 +39,7 @@ a {
     font-family: 'Antic Slab', serif;
     color: black;
     font-size: 1.5rem;
-}
-
-a:hover {
-    animation: neon .1s ease-in-out infinite alternate;
-    color: black;
+    position: relative;
 }
 
 h2 {
@@ -70,3 +67,60 @@ section {
 i {
     font-size: 2.5rem;
 }
+
+.side-bar {
+    position: relative;
+    &__text {
+        overflow: hidden;
+        position: fixed;
+        top: 310px;
+        font-size: 6rem;
+        font-family: 'Antic Slab', serif;
+        font-weight: bold;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        letter-spacing: 1.5rem;
+    }
+    &__line {
+        background: rgb(221, 221, 221) none repeat scroll 0 0;
+        height: 4px;
+        width: 450px;
+        left: -115px;
+        top: 144px;
+        transform: rotate(90deg);
+        position: absolute;
+    }
+}
+
+
+.mobile-title-container {
+    position:relative;
+}
+
+.mobile-title {
+    display: none;
+    border-right: solid 3px rgba(11, 17, 11, 0.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;  
+    font-family: 'Antic Slab', serif;
+    color: rgb(240, 216, 84);
+    font-size: 4.2rem;
+    letter-spacing: .3rem;
+    animation: animated-text 4s steps(17,end) 1s 1 normal both,
+    animated-cursor 600ms steps(17,end) infinite;
+}
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 286px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(238, 204, 55, 0.75);}
+    to{border-right-color: transparent;}
+  }
+

@@ -1,15 +1,26 @@
 .footer {
-    background-image: url(/assets/back_test.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: #141618;
+    background-image: url(../../assets/image-testing-min.png);
+    background-size: 2500px;
+    background-position: 20% 15%;
     padding: 50px 0;
-    box-shadow: inset 5px 20px 30px 0 #141618;
-    &__social-links {
+    margin-top: 200px;
+    &__social-list {
         display: flex;
         justify-content: center;
-        i {
-            margin: 25px;
-        }
+    }
+    &__social-icon {
+        font-size: 3rem;
+        color: whitesmoke;
+        margin: 0 30px;
+        transition: .5s;
+        margin: 0 40px;
+    }
+    &__social-icon:hover,
+    &__social-icon:focus {
+        animation: neon .1s ease-in-out infinite alternate;
+        color:rgb(202, 185, 86);
+        transform: scale(1.2);
     }
     &__list {
         display: flex;
@@ -20,7 +31,46 @@
     &__list-item {
         margin: 10px 0;
     }
-    a {
-        font-size: 1.5rem;
-    }
+}
+
+.footer__list-link {
+    font-size: 1.7rem;
+    color: whitesmoke;
+}
+
+.footer__list-link-active {
+    color: rgb(240, 216, 84);
+    animation: neon .1s ease-in-out infinite alternate;
+}
+
+.footer__list-link-active:hover,
+.footer__list-link-active:focus {
+    color: rgb(240, 216, 84);
+}
+
+.footer__list-link:hover,
+.footer__list-link:focus {
+    animation: neon .1s ease-in-out infinite alternate;
+    color: white;
+}
+
+.footer__list-link:after {
+    background: rgb(248, 228, 112) none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-top: -1px;
+    -webkit-margin-before: -2px;
+    position: absolute;
+    bottom: -25%;
+    left: -5%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 0;
+    animation: neon .1s ease-in-out infinite alternate;
+}
+
+.footer__list-link:hover:after,
+.header__list-link:focus:after {
+    width: 110%;
 }

@@ -1,0 +1,22 @@
+
+.shows {
+    &__title {
+        font-size: 3rem;
+        margin: 40px 0 60px 0;
+        text-align: center;
+    }
+    &__text {
+    text-transform: uppercase;
+    margin: 25px 0;
+    text-align: center;
+    }
+    &__text-date {
+        font-size: 3rem;
+    }
+    &__text-time {
+        margin-bottom: 100px;
+    }
+    &__img {
+        width: 100%;
+    }
+}

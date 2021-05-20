@@ -1,0 +1,53 @@
+.music {
+    &__title {
+        margin-bottom: 15px;
+        font-size: 2.1rem;
+    }
+    &__icon-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+    &__link:hover,
+    &__link:focus {
+        animation: neon .1s ease-in-out infinite alternate;
+        color:rgb(202, 185, 86);
+    }
+
+
+    &__icon {
+        margin-right: 10px;
+    }
+    
+    &__bandcamp-icon {
+        color: #629aa9;
+    }
+
+    &__spotify-icon {
+        color: #1ED760;
+    }
+
+    &__apple-icon {
+        color: 	#A2AAAD;
+    }
+
+    &__text {
+        margin: 25px 0 60px 0;
+        text-align: center;
+    }
+}

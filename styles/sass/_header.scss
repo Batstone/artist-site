@@ -1,10 +1,12 @@
+// header {
+//     background-color: #141618;
+// }
+
 .main-header {
-    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(46, 20, 10, 0.397),), url(/assets/Front.png);
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(46, 20, 10, 0.397),), url(/assets/Front-min.png);
     background-size: cover;
     background-position: 100% 0%;
-    background-attachment: fixed;
     height: 100vh;
-
 }
 
 .main-header::before {
@@ -16,19 +18,10 @@
     left: 0;
     width: 100%;
     z-index: 1;
-    background-image: url(/assets/Front-transparent.png);
+    background-image: url(/assets/Front-transparent-min.png);
     background-size: cover;
     background-position: 100% 0%;
-    background-attachment: fixed;
     box-shadow: inset 5px -250px 200px 0 #141618;
-}
-
-header {
-    background-color: #141618;
-}
-
-.header__list {
-    display: flex;
 }
 
 .header {
@@ -37,7 +30,7 @@ header {
     align-items: center;
     z-index: 1;
     position: relative;
-    padding: 20px 0;
+    padding: 30px 0;
     &__text {
         color: #161010;
         padding: 30px 10px;
@@ -45,6 +38,18 @@ header {
             font-size: 1.5rem;
             font-style: italic;
         }
+    }
+    &__sign {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+      &__sign-word {
+        text-align: center;
+        line-height: 1;
+        animation: neon .08s ease-in-out infinite alternate;
     }
     &__text-light {
         color: rgb(233, 230, 220);
@@ -54,6 +59,18 @@ header {
         font-weight: bold;
         font-family: 'Vibur', cursive;
     }
+    &__main-mobile-icon {
+        color: black;
+    }
+    &__main-mobile-icon-container {
+        background: rgba(255, 255, 255, 0);
+        border: none;
+        display:none;
+    }
+    &__main-mobile-icon--active {
+        color: rgb(0, 0, 0);
+        animation: neon .1s ease-in-out infinite alternate;
+    }
     &__mobile-icon-container {
         background: rgba(255, 255, 255, 0);
         border: none;
@@ -62,13 +79,12 @@ header {
     &__mobile-icon {
         position: relative;
         z-index: 3;
-        padding: 5px 15px;
         font-size: 30px;
     }
     &__mobile-icon--active {
-        padding: 5px 15px;
         font-size: 30px;
-        color: #208307;
+        color: rgb(245, 238, 197);
+        animation: neon .1s ease-in-out infinite alternate;
     }
     &__nav {
         position: relative;
@@ -98,16 +114,116 @@ header {
     &__social-item {
         margin-bottom: 25px;
     }
+    &__icon {
+        color: black;
+        transition: .5s;
+    }
+    &__icon:hover,
+    &__icon:focus {
+        animation: neon .1s ease-in-out infinite alternate;
+    
+        transform: scale(1.3);
+    }
+    &__mobile-social-list {
+        display: none;
+        z-index: 3;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    &__mobile-social-item {
+        margin: 0 20px;
+    }
+    &__alt-social-list {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__alt-icon {
+        color: whitesmoke;
+        margin: 0 0 0 50px;
+        transition: .5s;
+    }
+    &__alt-icon:hover,
+    &__alt-icon:focus {
+        animation: neon .1s ease-in-out infinite alternate;
+        color:rgb(202, 185, 86);
+        transform: scale(1.2);
+    }
+    &__light {
+        color:whitesmoke;
+    }
+    &__main-list-link:hover,
+    &__main-list-link:focus {
+        color: black;
+        animation: neon .1s ease-in-out infinite alternate;
+    }
+
+    &__main-list-link:after {
+        background: rgb(0, 0, 0) none repeat scroll 0 0;
+        content: "";
+        height: 2px;
+        left: 0;
+        margin-top: -1px;
+        -webkit-margin-before: -2px;
+        position: absolute;
+        bottom: -25%;
+        left: -5%;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        width: 0;
+        animation: neon .1s ease-in-out infinite alternate;
+    }
+
+    &__main-list-link:hover:after,
+    &__main -list-link:focus:after {
+        width: 110%;
+    }
+
+    &__list-link-active {
+        color: rgb(240, 216, 84);
+        animation: neon .1s ease-in-out infinite alternate;
+    }
+
+    &__list-link-active:hover,
+    &__list-link-active:focus {
+        color: rgb(240, 216, 84);
+    }
+
+    &__list-link:hover,
+    &__list-link:focus {
+        animation: neon .1s ease-in-out infinite alternate;
+        color: white;
+    }
+
+    &__list-link:after {
+        background: rgb(248, 228, 112) none repeat scroll 0 0;
+        content: "";
+        height: 2px;
+        left: 0;
+        margin-top: -1px;
+        -webkit-margin-before: -2px;
+        position: absolute;
+        bottom: -25%;
+        left: -5%;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        width: 0;
+        animation: neon .1s ease-in-out infinite alternate;
+    }
+
+    &__list-link:hover:after,
+    &__list-link:focus:after {
+        width: 110%;
+    }
+
+    &__line {
+        background: rgb(248, 228, 112) none repeat scroll 0 0;
+        height: 2px;
+        margin: 50px auto;
+        width: 88%;
+        max-width: 2000px;
+    }
 }
 
-
-.light {
-    color:whitesmoke;
-}
-
-/*-- Animation Keyframes --*/
-
-// animation
 
 @keyframes neon {
     from {
@@ -130,26 +246,3 @@ header {
     }
   }
   
-  .sign {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    &__word {
-      text-align: center;
-      line-height: 1;
-      animation: neon .08s ease-in-out infinite alternate;
-    }
-  }
-
-/*-- Sign Styles --*/
-
-  // Link
-  .link {
-      position: absolute;
-      bottom: 10px; left: 10px;
-      color: #828282;
-      text-decoration: none;
-  }
