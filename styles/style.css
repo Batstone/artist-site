@@ -368,6 +368,7 @@ i {
   background-size: cover;
   background-position: 100% 0%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .main-header::before {
@@ -382,8 +383,8 @@ i {
   background-image: url(/assets/Front-transparent-min.png);
   background-size: cover;
   background-position: 100% 0%;
-  -webkit-box-shadow: inset 5px -250px 200px 0 #141618;
-          box-shadow: inset 5px -250px 200px 0 #141618;
+  -webkit-box-shadow: inset 5px -150px 100px 0 #141618;
+          box-shadow: inset 5px -150px 100px 0 #141618;
 }
 
 .header {
@@ -504,7 +505,7 @@ i {
 }
 
 .header__social-list {
-  top: 15%;
+  top: 25%;
   z-index: 3;
   margin-right: 35px;
   position: absolute;
@@ -675,7 +676,20 @@ body {
 
 .home__section {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 50px;
+}
+
+.home__container {
+  overflow: hidden;
 }
 
 .home h2 {
@@ -688,14 +702,14 @@ body {
 
 .home__title_1 {
   position: absolute;
-  left: -18px;
   top: -20px;
+  text-align: center;
 }
 
 .home__title_2 {
   position: absolute;
-  left: -40px;
   top: -20px;
+  text-align: center;
 }
 
 .home__shows {
@@ -723,8 +737,8 @@ body {
 }
 
 .home__images-1::after {
-  -webkit-box-shadow: inset 5px -200px 200px 0 #141618;
-          box-shadow: inset 5px -200px 200px 0 #141618;
+  -webkit-box-shadow: inset 5px -100px 100px 0 #141618;
+          box-shadow: inset 5px -100px 100px 0 #141618;
   content: '';
   display: block;
   height: 100%;
@@ -734,8 +748,8 @@ body {
 }
 
 .music__title {
-  margin-bottom: 15px;
   font-size: 2.1rem;
+  margin-bottom: 10px;
 }
 
 .music__icon-list {
@@ -746,7 +760,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 25px;
+  margin: 35px 0 35px 0;
 }
 
 .music__info {
@@ -773,7 +787,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: whitesmoke;
-  margin-bottom: 15px;
+  margin: 15px 0 15px 0;
   font-size: 1.2rem;
 }
 
@@ -800,8 +814,13 @@ body {
 }
 
 .music__text {
-  margin: 25px 0 60px 0;
+  margin: 10px 0 60px 0;
   text-align: center;
+}
+
+.music__text-date {
+  font-size: 1.6rem;
+  margin-bottom: 35px;
 }
 
 .videos {
@@ -1045,16 +1064,6 @@ body {
   .main-header::before {
     background-position: 40% 10%;
   }
-  .home__title_1 {
-    position: absolute;
-    left: 0;
-    top: -25px;
-  }
-  .home__title_2 {
-    position: absolute;
-    left: 0;
-    top: -25px;
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1119,15 +1128,19 @@ body {
 }
 
 @media only screen and (max-width: 675px) {
-  .home__title_1 {
-    position: absolute;
-    left: 0;
-    top: -20px;
+  .main-header {
+    background-size: 1400px;
+    background-position: 40% 10%;
   }
-  .home__title_2 {
-    position: absolute;
-    left: 0;
-    top: -20px;
+  .main-header::before {
+    display: none;
+  }
+  .home__images-1::after {
+    -webkit-box-shadow: inset 2px -10px 10px 0 #141618;
+            box-shadow: inset 2px -10px 10px 0 #141618;
+  }
+  .home h2 {
+    font-size: 1.8rem;
   }
   .footer__social-icon {
     margin: 0 15px;
@@ -1135,16 +1148,6 @@ body {
 }
 
 @media only screen and (max-width: 445px) {
-  .home__title_1 {
-    position: absolute;
-    left: 0;
-    top: -25px;
-  }
-  .home__title_2 {
-    position: absolute;
-    left: 0;
-    top: -25px;
-  }
   .header__mobile-social-item {
     margin: 0 5px;
   }

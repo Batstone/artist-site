@@ -5,7 +5,13 @@ body {
 .home {
     &__section {
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 50px;
+    }
+    &__container {
+        overflow: hidden;
     }
     h2 {
         color: rgb(219, 194, 54);
@@ -16,13 +22,13 @@ body {
     }
     &__title_1 {
         position: absolute;
-        left: -18px;
         top: -20px;
+        text-align: center;
     }
     &__title_2 {
         position: absolute;
-        left: -40px;
         top: -20px;
+        text-align: center;
     }
     &__shows {
         display: flex;
@@ -39,7 +45,7 @@ body {
         }
     }
     &__images-1::after {
-        box-shadow: inset 5px -200px 200px 0 #141618;
+        box-shadow: inset 5px -100px 100px 0 #141618;
         content: '';
         display: block;
         height: 100%;

@@ -55,11 +55,13 @@ $(function () {
 
     $(".header__social-list").resize();
 
+    if ($(window).width() > 575) {
+        $(".main-header").ripples({
+            resolution: 512,
+            dropRadius: 30,
+            interactive: true,
+            perturbance: 0.005,
+        });
+    }
 
-    $(".main-header").ripples({
-        resolution: 512,
-        dropRadius: 30,
-        interactive: true,
-        perturbance: 0.005,
-    });
 });

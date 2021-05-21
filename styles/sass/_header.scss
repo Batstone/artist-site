@@ -1,12 +1,10 @@
-// header {
-//     background-color: #141618;
-// }
 
 .main-header {
     background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(46, 20, 10, 0.397),), url(/assets/Front-min.png);
     background-size: cover;
     background-position: 100% 0%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .main-header::before {
@@ -21,7 +19,7 @@
     background-image: url(/assets/Front-transparent-min.png);
     background-size: cover;
     background-position: 100% 0%;
-    box-shadow: inset 5px -250px 200px 0 #141618;
+    box-shadow: inset 5px -150px 100px 0 #141618;
 }
 
 .header {
@@ -103,7 +101,7 @@
         font-style: bold;
     }
     &__social-list {
-        top: 15%;
+        top: 25%;
         z-index: 3;
         margin-right: 35px;
         position: absolute;

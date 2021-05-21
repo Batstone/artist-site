@@ -89,18 +89,7 @@
         background-position: 40% 10%;
     }
 
-    .home {
-        &__title_1 {
-            position: absolute;
-            left: 0;
-            top: -25px;
-        }
-        &__title_2 {
-            position: absolute;
-            left: 0;
-            top: -25px;
-        }
-    }
+
  }
 
  @media only screen and (max-width: 767px) {
@@ -155,19 +144,24 @@
 
  @media only screen and (max-width: 675px) {
 
-    .home {
-        &__title_1 {
-            position: absolute;
-            left: 0;
-            top: -20px;
-        }
-        &__title_2 {
-            position: absolute;
-            left: 0;
-            top: -20px;
-        }
+    .main-header {
+        background-size: 1400px;
+        background-position: 40% 10%;
+    }
+    
+    .main-header::before {
+        display: none;
     }
 
+    .home {
+        &__images-1::after {
+            box-shadow: inset 2px -10px 10px 0 #141618;
+        }    
+       h2 {
+           font-size: 1.8rem;
+       }
+    }
+  
     .footer {
         &__social-icon {
             margin: 0 15px;
@@ -176,20 +170,7 @@
  }
 
  @media only screen and (max-width: 445px) {
-
-    .home {
-        &__title_1 {
-            position: absolute;
-            left: 0;
-            top: -25px;
-        }
-        &__title_2 {
-            position: absolute;
-            left: 0;
-            top: -25px;
-        }
-    }
-
+    
     .header {
         &__mobile-social-item {
             margin: 0 5px;

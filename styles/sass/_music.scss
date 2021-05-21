@@ -1,12 +1,12 @@
 .music {
     &__title {
-        margin-bottom: 15px;
         font-size: 2.1rem;
+        margin-bottom: 10px;
     }
     &__icon-list {
         display: flex;
         flex-direction: column;
-        margin-top: 25px;
+        margin: 35px 0 35px 0;
     }
     
     &__info {
@@ -15,12 +15,11 @@
         align-items: center;
         justify-content: center;
     }
-
     &__link {
         display: flex;
         align-items: center;
         color: whitesmoke;
-        margin-bottom: 15px;
+        margin: 15px 0 15px 0;
         font-size: 1.2rem;
     }
     &__link:hover,
@@ -28,8 +27,6 @@
         animation: neon .1s ease-in-out infinite alternate;
         color:rgb(202, 185, 86);
     }
-
-
     &__icon {
         margin-right: 10px;
     }
@@ -47,7 +44,11 @@
     }
 
     &__text {
-        margin: 25px 0 60px 0;
+        margin: 10px 0 60px 0;
         text-align: center;
+    }
+    &__text-date {
+        font-size: 1.6rem;
+        margin-bottom: 35px;
     }
 }
