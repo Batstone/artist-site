@@ -29,9 +29,10 @@ body {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: 'Antic Slab', serif;
-    line-height: 1.8rem;
+    line-height: 2.1rem;
+    letter-spacing: .5px;
 }
 
 a {
@@ -73,13 +74,14 @@ i {
     &__text {
         overflow: hidden;
         position: fixed;
-        top: 310px;
-        font-size: 6rem;
+        // top: 310px;
+        margin-top: 50px;
+        font-size: 4.5rem;
         font-family: 'Antic Slab', serif;
         font-weight: bold;
         writing-mode: vertical-rl;
         text-orientation: mixed;
-        letter-spacing: 1.5rem;
+        letter-spacing: 1.2rem;
     }
     &__line {
         background: rgb(221, 221, 221) none repeat scroll 0 0;

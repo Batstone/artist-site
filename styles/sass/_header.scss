@@ -2,7 +2,6 @@
 .main-header {
     background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(46, 20, 10, 0.397),), url(/assets/Front-min.png);
     background-size: cover;
-    background-position: 100% 0%;
     height: 100vh;
     overflow: hidden;
 }
@@ -12,14 +11,11 @@
     content: "";
     height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 1;
     background-image: url(/assets/Front-transparent-min.png);
     background-size: cover;
-    background-position: 100% 0%;
-    box-shadow: inset 5px -150px 100px 0 #141618;
+    box-shadow: inset 5px -100px 100px 0 #141618;
 }
 
 .header {
@@ -191,7 +187,6 @@
         animation: neon .1s ease-in-out infinite alternate;
         color: white;
     }
-
     &__list-link:after {
         background: rgb(248, 228, 112) none repeat scroll 0 0;
         content: "";
@@ -207,14 +202,12 @@
         width: 0;
         animation: neon .1s ease-in-out infinite alternate;
     }
-
     &__list-link:hover:after,
     &__list-link:focus:after {
         width: 110%;
     }
-
     &__line {
-        background: rgb(248, 228, 112) none repeat scroll 0 0;
+        background: #f8e470 none repeat scroll 0 0;
         height: 2px;
         margin: 50px auto;
         width: 88%;
@@ -222,6 +215,19 @@
     }
 }
 
+.fa-chevron-down {
+    font-size: 5rem;
+    color: rgb(199, 162, 108);
+}
+
+.arrow-link {
+    display: none;
+    position: absolute;
+    top: 90vh;
+    left: 48%;
+    z-index: 2;
+    animation: bounce .5s ease-in-out infinite alternate, neon .5s ease-in-out infinite alternate;
+}
 
 @keyframes neon {
     from {
@@ -244,3 +250,12 @@
     }
   }
   
+  @keyframes bounce {
+    from {
+      top:
+      90vh
+    }
+    to {
+    top: 89vh
+    }
+  }

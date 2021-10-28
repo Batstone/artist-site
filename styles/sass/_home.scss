@@ -6,7 +6,6 @@ body {
     &__section {
         position: relative;
         display: flex;
-        align-items: center;
         justify-content: center;
         margin-top: 50px;
     }
@@ -17,8 +16,16 @@ body {
         color: rgb(219, 194, 54);
         font-size: 2.6rem;
         text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(25, 25, 26), -1px 1px 0 rgb(29, 30, 32), 1px 1px 0rgb(28, 87, 250)0;
-        font-family: 'Antic Slab', serif;
+        font-family: 'Oxygen', sans-serif;
         text-transform: uppercase;
+    }
+    &__icon-list {
+        display: flex;
+        justify-content: center;
+        i {
+            font-size: 3rem;
+            margin: 25px;
+        }
     }
     &__title_1 {
         position: absolute;
@@ -29,6 +36,21 @@ body {
         position: absolute;
         top: -20px;
         text-align: center;
+    }
+    &__article {
+        margin: 50px 0;
+    }
+    &__text {
+        margin: 25px 0;
+        span {
+            font-size: 1.4rem;
+            font-weight: bolder;
+            color: rgb(219, 194, 54);
+            animation: neon 1s ease-in-out infinite alternate;
+        }
+    }
+    &__news-link {
+        color: rgb(219, 194, 54);
     }
     &__shows {
         display: flex;
@@ -53,5 +75,34 @@ body {
         top: 0;
         width: 100%;
        }
+       &__form {
+           padding: 50px 25px 50px 25px;
+       }
+       &__album-img {
+           img {
+               width: 100%;
+               margin-top: 50px;
+           }
+       }
     }
 
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(112, 112, 112, 0.92),
+      0 0 30px rgba(0, 0, 0, 0.34),
+      0 0 12px rgba(211, 74, 11, 0.329),
+      0 0 21px rgba(46, 44, 42, 0.92),
+      0 0 34px rgba(173, 171, 171, 0.78),
+      0 0 54px rgba(15, 15, 15, 0.582);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(139, 139, 139, 0.98),
+      0 0 30px rgba(230, 152, 9, 0.007),
+      0 0 12px rgba(187, 89, 23, 0.329),
+      0 0 22px rgba(110, 85, 16, 0.84),
+      0 0 38px rgb(3, 3, 3),
+      0 0 60px rgba(197, 196, 196, 0.726);
+    }
+  }

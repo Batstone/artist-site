@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>John Aulabaugh</title>
     <link rel="shortcut icon" type="image/jpg" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -90,31 +92,147 @@
                 <li class="header__social-item"><a href="https://www.youtube.com/channel/UCPrlmn0AHL-rpE1yeIpqGlg"
                         target="_blank"><i class="fab fa-youtube header__icon"></i></a></li>
             </ul>
+            <a href="#home" class="arrow-link"><i class="fas fa-chevron-down"></i></a>
         </header>
     </div>
 
-    <main class="home">
+    <main class="home" id="home">
         <section class="container home__container">
+            <div class="row dark home__section">
+                <h2 class="home__title_1">Available now</h2>
+                <div class="home__article">
+                    <div class="home__icon-list">
+                        <a href="https://johnaulabaugh.bandcamp.com/album/sweet-as-you" target="_blank"
+                            class="music__link"><i
+                                class="fab fa-bandcamp home__music-icon music__bandcamp-icon"></i></a>
+                        <a href="https://open.spotify.com/album/103psZZtAwGgpFNLsDoBPc" target="_blank"
+                            class="music__link"><i class="fab fa-spotify home__music-icon music__spotify-icon"></i></a>
+                        <a href="https://music.apple.com/us/album/sweet-as-you/1580058716?fbclid=IwAR1ZzPEmoNoY8JvVWg4ohnBz6QVKZ3nFr5Idd5y4BaF0wzbk4Ge6a6VV13E"
+                            target="_blank" class="music__link"><i
+                                class="fab fa-apple home__music-icon music__apple-icon"></i></a>
+                    </div>
+                    <div class="home__album-img">
+                        <p class="home__text">The Sweet As You limited vinyl run is now available for
+                            order. Grab your
+                            copy (CD and VINYL) from <a href="https://johnaulabaugh.bandcamp.com/album/sweet-as-you"
+                                target="_blank" class="home__news-link">bandcamp</a>.
+                            The artwork on this release was hand-drawn by Daniel Reed, renowned comic book
+                            artist from Australia.
+                        </p>
+                        <img src="./assets/SAY_Jacket.png" alt="The record art for the new album 'Sweet As You">
+                    </div>
+                </div>
+            </div>
             <div class="row justify-content-between">
                 <div data-aos="zoom-out" class="col-lg-7 dark home__section mb-5">
                     <h2 class="home__title_1">News</h2>
-                    <p>5/20/2021 - The new site is live! We will be adding more content soon!
-                    </p>
+                    <div class="home__news">
+                        <div class="home__article">
+                            <p class="home__text"><span>10/12/2021</span> - Excited to share that 'Sweet as You' has
+                                been
+                                featured in the online electronic music magazine <a
+                                    href="https://findyoursounds.com/veteran-recording-artist-john-aulabaugh-utilizes-sonic-expertise-for-sweet-as-you-album/"
+                                    target="_blank" class="home__news-link">Find Your Sounds</a>.
+                            </p>
+                        </div>
+                        <div class="home__article">
+                            <p class="home__text"><span>10/7/2021</span> - Check out this album <a
+                                    href="https://www.smilepolitely.com/music/review_john_aulabaughs_sweet_as_you/"
+                                    target="_blank" class="home__news-link">review</a> recently published in
+                                Champaign-Urbana's online magazine, Smile Politely.
+                            </p>
+                        </div>
+                        <div class="home__article">
+                            <p class="home__text"><span>9/6/2021</span> - The vinyl release of the newest album 'Sweet
+                                As
+                                You'
+                                is now available!
+                                <a href="https://johnaulabaugh.bandcamp.com/album/sweet-as-you" target="_blank"
+                                    class="home__news-link">Order</a> your copy of the limited run.
+                            </p>
+                        </div>
+                        <div class="home__article">
+                            <p class="home__text"> <span>8/12/2021</span> - Check out this recent
+                                <a class="home__news-link" href="https://www.wglt.org/tags/john-aulabaugh"
+                                    target="_blank">interview</a> that was aired
+                                on
+                                WGLT.org NPR from
+                                Illinois
+                                State. We discussed the
+                                new album, Sweet As You, as well as diving into the writing process and lyrics.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div data-aos="zoom-out" class="col-lg-4 dark home__section home__shows">
                     <h2 class="home__title_2">Upcoming Shows</h2>
-                    <p class="shows__text shows__text-date">May 29</p>
-                    <p class="shows__text">normal, IL</p>
-                    <p class="shows__text">Loungeabout the roundabout</p>
-                    <p class="shows__text shows__text-time">6pm</p>
+                    <!-- <p>Check back for new dates</p> -->
+                    <p class="shows__text shows__text-date">Oct 30</p>
+                    <p class="shows__text">Decatur, IL</p>
+                    <p class="shows__text">Golden Fox Brewing</p>
+                    <p class="shows__text shows__text-time">7pm</p>
+                    <p><a class="home__news-link" href="https://www.facebook.com/events/1021352008662831/?ref=newsfeed"
+                            target="_blank">Event
+                            Details</a></p>
                 </div>
             </div>
         </section>
+
+        <div id="mc_embed_signup">
+            <form
+                action="https://johnaulabaugh.us5.list-manage.com/subscribe/post?u=09a1a4ff4815cd8d998ee77e0&amp;id=b7bb88ffce"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL" class="form-input">Subscribe to the mailing list to stay up to date on
+                        all the news!</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
+                        required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_09a1a4ff4815cd8d998ee77e0_b7bb88ffce" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                            id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
 
         <div class="home__images">
             <div class="home__images-1">
                 <img src="./assets/2016-06-300192-2-min.jpg" alt="John Aulabaugh in performance">
             </div>
+        </div>
+
+        <div class="form">
+            <!-- Begin Mailchimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+                #mc_embed_signup {
+                    color: rgb(219, 194, 54);
+                    clear: left;
+                    width: 100%;
+                    padding: 50px 0 50px 0;
+                }
+
+                #mc_embed_signup label {
+                    font: 25px 'Oxygen', sans-serif;
+                }
+
+                .form-input {
+                    margin-bottom: 35px;
+                    font-size: 2.0;
+                }
+
+                .clear {
+                    background-color: red;
+                    color: red;
+
+                }
+
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <!--End mc_embed_signup-->
         </div>
 
         <footer class="footer">

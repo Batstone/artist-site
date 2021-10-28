@@ -24,12 +24,11 @@
     }
     &__list {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
     }
     &__list-item {
-        margin: 10px 0;
+        margin: 50px 10px;
     }
 }
 
@@ -40,6 +39,7 @@
 
 .footer__list-link-active {
     color: rgb(240, 216, 84);
+    font-size: 1.7rem;
     animation: neon .1s ease-in-out infinite alternate;
 }
 

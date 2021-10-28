@@ -1,4 +1,19 @@
 
+@media only screen and (min-height: 1200px) {
+        
+    .arrow-link {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .footer {
+        &__list {
+            justify-content: center;
+        }
+    }
+}
 
 @media only screen and (max-width: 1290px) {
 
@@ -163,13 +178,25 @@
     }
   
     .footer {
+        margin-top: 0px;
         &__social-icon {
             margin: 0 15px;
+        }
+        &__list {
+            flex-direction: column;
+            margin: 40px 0 40px 0;
+        }
+        &__list-item {
+            margin: 10px 0;
         }
     }
  }
 
  @media only screen and (max-width: 445px) {
+
+    .arrow-link {
+        display: none;
+    }
     
     .header {
         &__mobile-social-item {
